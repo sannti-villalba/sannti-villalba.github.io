@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <title>Proyecto Final</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>Santiago Villalba</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">Sobre mí</a></li>
+            <li><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li><a href="#projects" class="nav-link">Projectos</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+    <!-- Hero Sección -->
+    <section class="hero" id="about">
+        <img src="images/Programming-amico.svg" alt="Programming-amico" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">Sobre mí</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+                autem deleniti cupiditate molestias quis unde quae totam porro dicta
+                iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+            </p>
+        </div>
+    </section>
+    <!-- Mas Sobre mí -->
+    <section class="more-about">
+        <h2>Mas Sobre mí</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+            autem deleniti cupiditate molestias quis unde quae totam porro dicta
+            iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+            nostrum dolor minus, libero delectus praesentium perferendis
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            consequuntur labore? Ea totam voluptas amet!
+        </p>
+    </section>
+    <!-- Sección habillidades -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">Mis habillidades</h2>
+    
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+    
+            <div class="second-set animate__animated animate__pulse">
+                <img src="icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+    <!-- Sección projectos -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Algunos de mis proyectos</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="images/ControladorDeGastos.png" alt="controlador-de-gastos" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Controlador De Gastos</h3>
+                <p class="project-details">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    ratione vel inventore labore commodi modi quos culpa aut saepe!
+                    Alias!
+                </p>
+                <a href="#" target="_blank" class="project-link">Ver proyecto</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="images/netflixClon.png" alt="netflix-clon" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Netflix Clon</h3>
+                <p class="project-details">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    ratione vel inventore labore commodi modi quos culpa aut saepe!
+                    Alias!
+                </p>
+                <a href="#" target="_blank" class="project-link">Ver proyecto</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="images/Mundo Verde.png" alt="Mundo-Verde" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Mundo Verde</h3>
+                <p class="project-details">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                    ratione vel inventore labore commodi modi quos culpa aut saepe!
+                    Alias!
+                </p>
+                <a href="#" target="_blank" class="project-link">Ver proyecto</a>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion contacto -->
+    <section class="contact" id="contact">
+        <h2>Ponte en contacto conmigo</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xyylnggw" method="POST">
+                    <div class="form-control">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Ingresa tu nombre" class="input-field"
+                            required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Ingresa tu Email"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Ingresa tu email" name="message"
+                            class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Redes sociales -->
+    <div class="socials">
+        <a href="https://twitter.com" target="_blank"><img src="icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy"
+                class="socicon" /></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="icons/icons8-instagram.gif" alt="Instagram" loading="lazy"
+                class="socicon" /></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy"
+                class="socicon" /></a>
+        <a href="https://github.com" target="_blank"><img src="icons/icons8-github.gif" alt="Github" class="socicon" /></a>
+    </div>
+    <!-- Vuelve al comienzo -->
+    <i class="scroll-up" id="scroll-up"><img src="icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt="" /></i>
+    <!-- Sección footer -->
+    <footer>
+        <p class="copy">&copy; Copyright 2023</p>
+        <p class="copy">
+            Desarrollado por
+            <a href="#" target="_blank">Santi Villalba</a>
+        </p>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
