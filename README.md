@@ -1,7 +1,7 @@
 Proyecto-Final-Primeros-pasos-del-desarrollo-frontend
 Proyecto de curriculum TICMAS de Argentina Programa 4.0
 
-El proyecto se subió a GitHub Pages: # sannti-villalba.github.io
+El proyecto se subió a GitHub Pages: sannti-villalba.github.io
 
 Enunciado
 ¡Llegó el momento de validar lo aprendido!
